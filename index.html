@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+
+
+  <!--Made With ❤ by HybriidBox-->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="hybriidflow">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  
+
+  <title>hybriidflow</title>
+  <style>
+
+  html, body {
+  overscroll-behavior-x: none;
+}
+    body {
+      background-color: #919191;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    @font-face {
+      font-family: myFirstFont;
+      src: url("icons/VarelaRound-Regular.ttf");
+    }
+
+    .inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      max-height: 100%; /* Limit container height to the viewport height */
+      overflow: hidden; /* Hide vertical scrollbar */
+    }
+
+    .inner img {
+      max-width: 100%;
+      max-height: 100%; /* Make the image fit within the container */
+      width: auto;
+      height: auto;
+      user-drag: none; /* Disable dragging of the image */
+      -webkit-user-drag: none; /* For Safari */
+      -moz-user-drag: none; /* For Firefox */
+      -ms-user-drag: none; /* For Microsoft Edge */
+      -webkit-touch-callout: none; /* Disable callout on long-press on iOS */
+    }
+  </style>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+
+
+
+<div class="inner">
+  <img src="icons/hybriidboxloading2.png" />
+</div>
+
+  <div></div>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=4117524163');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+<script type="text/javascript"> window.flutterWebRenderer = "html"; </script>
+
+
+</body>
+</html>
